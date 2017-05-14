@@ -9,11 +9,11 @@
     <!-- Place favicons and touch icons -->
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css"/>
   </head>
-  <body class="sans-serif">
+  <body class="sans-serif pb5">
     <!--[if lte IE 9]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
-    <section class="relative vh-75 cover bg-center" id="quando" style="background-image: url('https://thumbs.dreamstime.com/z/couple-hugging-holding-hands-looks-engagement-ring-outdoors-52113564.jpg')">
+    <section class="relative mb5 vh-75 cover bg-center" id="quando" style="background-image: url('https://thumbs.dreamstime.com/z/couple-hugging-holding-hands-looks-engagement-ring-outdoors-52113564.jpg')">
       <div class="mw7 center">
         <nav class="tc pa4 pa3-ns flex flex-wrap flex-none-ns justify-center">
           <a href="#quando" class="dib w-50 w-auto-ns white no-underline ttu mb3 mb0-ns mr3-ns">Quando</a>
@@ -27,23 +27,70 @@
         </div>
       </div>
     </section>
-    <section id="dove">
-      <div class="mw7 center">
+    <section class="mb5" id="dove">
+      <div class="mw7 center ph3">
         <h3 class="tc">Come arrivare</h3>
-        <h4 class="tc">Chiesa</h4>
-        <h4 class="tc">Ricevimento</h4>
+        <div class="cf">
+          <div class="mb3 fl-ns w-50-ns">
+            <h4 class="ma0">Chiesa</h4>
+            <address>
+              Piazza sacrato, 7<br>
+              46033 Castel D’ario (MN)<br>
+            </address>
+            <a href="#!">Apri in Mappe</a>
+          </div>
+          <div class="mb4 fl-ns w-50-ns">
+            <img src="https://www.parrocchiadicasteldario.it/wp-content/uploads/2016/09/Parrocchia-contatti.jpg" alt="">
+          </div>
+        </div>
+        <div class="cf">
+          <div class="mb3 fl-ns w-50-ns">
+            <h4 class="ma0">Ricevimento</h4>
+            <address>
+              via nomeDellaVia, numero<br>
+              CAP nomeDellaCittà (MN)<br>
+            </address>
+            <a href="#!">Apri in Mappe</a>
+          </div>
+          <div class="fl-ns w-50-ns">
+            <img src="https://www.theinteriordesign.it/progprodimg/01(1)1052642.jpg" alt="">
+          </div>
+        </div>
       </div>
     </section>
-    <section id="lista-nozze">
-      <div class="mw7 center">
+    <section class="mb5" id="lista-nozze">
+      <div class="mw7 center ph3">
         <h3 class="tc">Lista nozze</h3>
+        <div class="w100 h5 bg-gray"></div>
       </div>
     </section>
-    <section id="rsvp ">
-      <div class="mw7 center">
+    <section class="mb5" id="rsvp">
+      <div class="mw7 center ph3">
         <h3 class="tc">RSVP</h3>
         <form action="">
-          <input type="text">
+          <p>
+            <label>Nome</label>
+            <input type="text" name="nome">
+          </p>
+          <p>
+            <label>Cognome</label>
+            <input type="text" name="nome">
+          </p>
+          <p>
+            <input type="radio" name="title" value="1">
+            <label>1</label>
+            <input type="radio" name="title" value="1">
+            <label>2</label>
+            <input type="radio" name="title" value="1">
+            <label>3</label>
+            <input type="radio" name="title" value="1">
+            <label>4</label>
+            <input type="radio" name="title" value="1">
+            <label>5+</label>
+          </p>
+          <p>
+            <button>Invia</button>
+          </p>
         </form>
       </div>
     </section>
