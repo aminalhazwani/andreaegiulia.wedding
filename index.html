@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css"/>
     <style>
       :root {
-        --gossip: #9eca8c;
+        --gossip: 158, 202, 140;
       }
 
       @font-face {
@@ -48,81 +48,101 @@
       }
 
       .gossip {
-        color: var(--gossip);
+        color: rgb(var(--gossip));
       }
 
       .bg-gossip {
-        background-color: var(--gossip);
+        background-color: rgb(var(--gossip));
+      }
+
+      .bg-gossip-20 {
+        background-color: rgba(var(--gossip), 0.2);
       }
 
       .b--gossip {
-        border-color: var(--gossip);
+        border-color: rgb(var(--gossip));
       }
     </style>
   </head>
-  <body class="courier-new pb5">
+  <body class="near-black courier-new">
     <!--[if lte IE 9]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
-    <section class="relative mb5 vh-75 cover bg-center" id="quando" style="background-image: url('https://thumbs.dreamstime.com/z/couple-hugging-holding-hands-looks-engagement-ring-outdoors-52113564.jpg')">
-      <div class="mw7 center">
-        <nav class="tc pa4 pa3-ns flex flex-wrap flex-none-ns justify-center">
-          <a href="#quando" class="fw7 dib w-50 w-auto-ns white font-smooting tracked no-underline ttu mb3 mb0-ns mr3-ns">Quando</a>
-          <a href="#dove" class="fw7 dib w-50 w-auto-ns white font-smooting tracked no-underline ttu mb3 mb0-ns mh3-ns">Dove</a>
-          <a href="#lista-nozze" class="fw7 dib w-50 w-auto-ns white font-smooting tracked no-underline ttu mh3-ns">Lista Nozze</a>
-          <a href="#rsvp" class="fw7 dib w-50 w-auto-ns white font-smooting tracked no-underline ttu ml3-ns">RSVP</a>
-        </nav>
-        <div class="absolute pa3 w-100" style="top: 50%; left:50%; transform:translate(-50%, -40%)">
-          <h1 class="f1 f-subheadline-l pacific white tc ma0">Andrea <span class="gossip">e</span> Giulia</h1>
-          <img class="db center pv3 w4" src="images/leaves.svg" alt="">
-          <h2 class="f4 f3-ns tc ma0 white font-smoothing tracked">9 settembre 2017</h2>
+    <header class="mw7 center mb3 overflow-hidden">
+      <div class="cf">
+        <div class="fl-ns w-60-ns tc">
+          <div class="pa3 dib shadow-4 mb4" style="transform: rotate(-12deg);">
+            <img class="db mb3" src="images/polaroid.jpg" alt="">
+            <h1 class="f2 pacific tc mt0 mb1">Andrea <span class="gossip">e</span> Giulia</h1>
+            <h2 class="f5 tc ma0 fw4 tracked">9 settembre 2017</h2>
+          </div>
+        </div>
+        <div class="fl-ns w-40-ns">
+          <nav class="tc mt4-ns pt5-ns">
+            <img class="db center pv3 w4 rotate-180" src="images/leaves.svg" alt="">
+            <a href="#quando-e-dove" class="near-black fw7 db tracked no-underline">Quando e Dove</a>
+            <a href="#ricevimento" class="near-black fw7 db tracked no-underline pt3 pb2">Ricevimento</a>
+            <a href="#lista-nozze" class="near-black fw7 db tracked no-underline pt2 pb3">Lista Nozze</a>
+            <a href="#rsvp" class="near-black fw7 db tracked no-underline">RSVP</a>
+            <img class="db center pv3 w4" src="images/leaves.svg" alt="">
+          </nav>
         </div>
       </div>
-    </section>
-    <section class="mb5" id="dove">
-      <div class="mw7 center ph3">
-        <h3 class="mt0 tc mb4">Come arrivare</h3>
+    </header>
+    <section class="pv4 bg-gossip-20" id="quando-e-dove">
+      <div class="mw7 center ph3 tc lh-copy">
+        <h3 class="mt0 mb2 f5">Quando e Dove</h3>
+        <p class="mt0">Siete invitati a celebrare con noi il nostro matrimonio il</p>
+        <p class="mt0 pacific gossip f2 mb3 lh-solid">9 settembre 2017</p>
+        <p class="mt0">alle ore</p>
+        <p class="mt0 pacific gossip f2 mb3 lh-solid">16:00</p>
         <div class="cf">
           <div class="mb3 fl-ns w-50-ns">
             <h4 class="ma0">Parrocchia Santa Maria Assunta</h4>
-            <address class="fs-normal lh-copy">
+            <address class="fs-normal">
               Piazza sacrato, 7<br>
-              46033 Castel D’ario (MN)<br>
+              46033 Castel d’Ario (MN)<br>
             </address>
-            <a class="fw7 gossip no-underline bb bw1 b--gossip" href="https://www.google.it/maps/place/Parrocchia+Della+Assunzione+Della+Beata+Vergine+Maria/@45.1897766,10.9733179,17z/data=!3m1!4b1!4m5!3m4!1s0x477f7b7e02613967:0xb4bd0a1d6d965db1!8m2!3d45.1897728!4d10.9755066?hl=en">Apri in Mappe</a>
+            <a class="dib fw7 gossip no-underline bb bw1 b--gossip" href="https://www.google.it/maps/place/Parrocchia+Della+Assunzione+Della+Beata+Vergine+Maria/@45.1897766,10.9733179,17z/data=!3m1!4b1!4m5!3m4!1s0x477f7b7e02613967:0xb4bd0a1d6d965db1!8m2!3d45.1897728!4d10.9755066?hl=en">Apri in Mappe</a>
           </div>
-          <div class="mb4 fl-ns w-50-ns">
-            <img src="https://www.parrocchiadicasteldario.it/wp-content/uploads/2016/09/Parrocchia-contatti.jpg" alt="">
+          <div class="fl-ns w-50-ns">
+            <img src="images/church.jpg" alt="">
           </div>
         </div>
+      </div>
+    </section>
+    <section class="pv4" id="ricevimento">
+      <div class="mw7 center ph3 tc lh-copy">
+        <h3 class="mt0 f5 mb2">Ricevimento</h3>
         <div class="cf">
           <div class="mb3 fl-ns w-50-ns">
-            <h4 class="ma0">Villa Corte Peron</h4>
-            <address class="fs-normal lh-copy">
+            <p class="mt0">Dopo la cerimonia festeggeremo insieme presso</p>
+            <p class="mt0 pacific gossip f2 mb3 lh-solid">Villa Corte Peron</p>
+            <address class="fs-normal">
               strada Roverbella Bancole, 60<br>
               46045 Marmirolo (MN)<br>
             </address>
             <a class="fw7 gossip no-underline bb bw1 b--gossip" href="https://www.google.it/maps/place/villa+Corte+Peron/@45.2236938,10.7813213,17z/data=!3m1!4b1!4m5!3m4!1s0x4781d0b86c9ed985:0x2a3380404bf63eb1!8m2!3d45.22369!4d10.78351?hl=en">Apri in Mappe</a>
           </div>
           <div class="fl-ns w-50-ns">
-            <img src="http://www.pasinicatering.it/wp-content/uploads/2014/09/DSC0109.jpg" alt="">
+            <img src="images/villa.jpg" alt="">
           </div>
         </div>
       </div>
     </section>
-    <section class="mb5" id="lista-nozze">
+    <section class="pv4 bg-gossip-20" id="lista-nozze">
       <div class="mw7 center ph3">
-        <h3 class="mt0 tc mb4">Lista nozze</h3>
+        <h3 class="mt0 tc f5 mb2">Lista nozze</h3>
         <div class="w100 h5 bg-gossip"></div>
       </div>
     </section>
-    <section class="mb5" id="rsvp">
+    <section class="pv4" id="rsvp">
       <div class="mw7 center ph3">
-        <h3 class="mt0 tc mb4">RSVP</h3>
+        <h3 class="mt0 tc f5 mb2">RSVP</h3>
         <div class="w100 h5 bg-gossip"></div>
       </div>
     </section>
-    <section>
+    <section class="pv4 bg-gossip-20">
       <img class="db center h3" src="images/hourglass.svg" alt="">
     </section>
   </body>
