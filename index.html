@@ -8,36 +8,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Place favicons and touch icons -->
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css"/>
+    <style>
+      :root {
+        --gossip: #9eca8c;
+      }
+
+      @font-face {
+        font-family: "Pacific";
+        src: url("fonts/pacific.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "Courier New";
+        src: url("fonts/courier-new-bold.woff") format("woff");
+        font-weight: 700;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "Courier New";
+        src: url("fonts/courier-new-regular.woff") format("woff");
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .pacific {
+        font-family: "Pacific";
+      }
+
+      .courier-new {
+        font-family: "Courier New";
+      }
+
+      .font-smoothing {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .gossip {
+        color: var(--gossip);
+      }
+
+      .bg-gossip {
+        background-color: var(--gossip);
+      }
+
+      .b--gossip {
+        border-color: var(--gossip);
+      }
+    </style>
   </head>
-  <body class="sans-serif pb5">
+  <body class="courier-new pb5">
     <!--[if lte IE 9]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
     <section class="relative mb5 vh-75 cover bg-center" id="quando" style="background-image: url('https://thumbs.dreamstime.com/z/couple-hugging-holding-hands-looks-engagement-ring-outdoors-52113564.jpg')">
       <div class="mw7 center">
         <nav class="tc pa4 pa3-ns flex flex-wrap flex-none-ns justify-center">
-          <a href="#quando" class="dib w-50 w-auto-ns white no-underline ttu mb3 mb0-ns mr3-ns">Quando</a>
-          <a href="#dove" class="dib w-50 w-auto-ns white no-underline ttu mb3 mb0-ns mh3-ns">Dove</a>
-          <a href="#lista-nozze" class="dib w-50 w-auto-ns white no-underline ttu mh3-ns">Lista Nozze</a>
-          <a href="#rsvp" class="dib w-50 w-auto-ns white no-underline ttu ml3-ns">RSVP</a>
+          <a href="#quando" class="fw7 dib w-50 w-auto-ns white font-smooting tracked no-underline ttu mb3 mb0-ns mr3-ns">Quando</a>
+          <a href="#dove" class="fw7 dib w-50 w-auto-ns white font-smooting tracked no-underline ttu mb3 mb0-ns mh3-ns">Dove</a>
+          <a href="#lista-nozze" class="fw7 dib w-50 w-auto-ns white font-smooting tracked no-underline ttu mh3-ns">Lista Nozze</a>
+          <a href="#rsvp" class="fw7 dib w-50 w-auto-ns white font-smooting tracked no-underline ttu ml3-ns">RSVP</a>
         </nav>
         <div class="absolute pa3 w-100" style="top: 50%; left:50%; transform:translate(-50%, -40%)">
-          <h1 class="white tc ma0">Giulia e Andrea</h1>
-          <h2 class="white tc ma0">30 settembre 2017</h2>
+          <h1 class="f1 f-subheadline-l pacific white tc ma0">Andrea <span class="gossip">e</span> Giulia</h1>
+          <img class="db center pv3 w4" src="images/leaves.svg" alt="">
+          <h2 class="f4 f3-ns tc ma0 white font-smoothing tracked">9 settembre 2017</h2>
         </div>
       </div>
     </section>
     <section class="mb5" id="dove">
       <div class="mw7 center ph3">
-        <h3 class="tc">Come arrivare</h3>
+        <h3 class="mt0 tc mb4">Come arrivare</h3>
         <div class="cf">
           <div class="mb3 fl-ns w-50-ns">
-            <h4 class="ma0">Chiesa</h4>
-            <address>
+            <h4 class="ma0">Parrocchia Santa Maria Assunta</h4>
+            <address class="fs-normal lh-copy">
               Piazza sacrato, 7<br>
               46033 Castel D’ario (MN)<br>
             </address>
-            <a href="#!">Apri in Mappe</a>
+            <a class="fw7 gossip no-underline bb bw1 b--gossip" href="#!">Apri in Mappe</a>
           </div>
           <div class="mb4 fl-ns w-50-ns">
             <img src="https://www.parrocchiadicasteldario.it/wp-content/uploads/2016/09/Parrocchia-contatti.jpg" alt="">
@@ -45,12 +97,12 @@
         </div>
         <div class="cf">
           <div class="mb3 fl-ns w-50-ns">
-            <h4 class="ma0">Ricevimento</h4>
-            <address>
-              via nomeDellaVia, numero<br>
-              CAP nomeDellaCittà (MN)<br>
+            <h4 class="ma0">Villa Corte Peron</h4>
+            <address class="fs-normal lh-copy">
+              strada Roverbella Bancole, 60<br>
+              46045 Marmirolo (MN)<br>
             </address>
-            <a href="#!">Apri in Mappe</a>
+            <a class="fw7 gossip no-underline bb bw1 b--gossip" href="#!">Apri in Mappe</a>
           </div>
           <div class="fl-ns w-50-ns">
             <img src="https://www.theinteriordesign.it/progprodimg/01(1)1052642.jpg" alt="">
@@ -60,39 +112,18 @@
     </section>
     <section class="mb5" id="lista-nozze">
       <div class="mw7 center ph3">
-        <h3 class="tc">Lista nozze</h3>
-        <div class="w100 h5 bg-gray"></div>
+        <h3 class="mt0 tc mb4">Lista nozze</h3>
+        <div class="w100 h5 bg-gossip"></div>
       </div>
     </section>
     <section class="mb5" id="rsvp">
       <div class="mw7 center ph3">
-        <h3 class="tc">RSVP</h3>
-        <form action="">
-          <p>
-            <label>Nome</label>
-            <input type="text" name="nome">
-          </p>
-          <p>
-            <label>Cognome</label>
-            <input type="text" name="nome">
-          </p>
-          <p>
-            <input type="radio" name="title" value="1">
-            <label>1</label>
-            <input type="radio" name="title" value="1">
-            <label>2</label>
-            <input type="radio" name="title" value="1">
-            <label>3</label>
-            <input type="radio" name="title" value="1">
-            <label>4</label>
-            <input type="radio" name="title" value="1">
-            <label>5+</label>
-          </p>
-          <p>
-            <button>Invia</button>
-          </p>
-        </form>
+        <h3 class="mt0 tc mb4">RSVP</h3>
+        <div class="w100 h5 bg-gossip"></div>
       </div>
+    </section>
+    <section>
+      <img class="db center h3" src="images/hourglass.svg" alt="">
     </section>
   </body>
 </html>
